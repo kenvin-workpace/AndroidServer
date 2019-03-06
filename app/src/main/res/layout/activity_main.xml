@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_start"
+            style="@style/cardview_set"
+            app:cardElevation="5sp">
+
+            <TextView
+                style="@style/textview_set"
+                android:text="开启服务"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_stop"
+            style="@style/cardview_set"
+            android:visibility="gone"
+            app:cardElevation="5sp">
+
+            <TextView
+                style="@style/textview_set"
+                android:text="关闭服务"/>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_address"
+        style="@style/textview_set"/>
+
+</LinearLayout>
